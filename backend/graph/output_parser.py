@@ -6,7 +6,7 @@ class startupanalysis(BaseModel):
     target_users:str
     strengths:list[str]
     weakness:list[str]
-    score:int
+    
 
 class comp_find_analysis(BaseModel):
     competitors:List[str]
@@ -14,3 +14,5 @@ class comp_find_analysis(BaseModel):
 class score(BaseModel):
     final_score:int
     recommendation:str
+class FundingCompanies(BaseModel):
+    companies: List[str]
